@@ -1,0 +1,50 @@
+body {
+	margin: 0 auto;
+	width: 700px;
+}
+
+#game {
+	background-image: url('img/gato.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+	width: 400px;
+}
+
+.selection {
+	display: inline-block;
+	font-size: 130px;
+	margin-left: 10px;
+	height: 116px;
+	width: 116px;
+}
+
+#stats {
+	float: right;
+}
+
+#player1 {
+	float: left;
+}
+
+#player2 {
+	float: left;
+	margin-left: 50px;
+}
+
+#option {
+	clear: both;
+	display: inline-block;
+	padding-top: 50px;
+}
+
+button {
+	margin-right: 40px;
+}
+
+#turns {
+	display: inline-block;
+	padding-left: 50px;
+}

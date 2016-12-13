@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<html>
+	<head lang="en">
+		<meta charset="utf-8">
+		<title>Juego de Gato</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+	</head>
+
+	<body>
+		<h1>JUGUEMOS GATO</h1>
+
+		<h2>El turno es de: <span id="turn"></span></h2>
+
+		<div id="game">
+			<div class="selection" id="selection1">
+			</div>
+
+			<div class="selection" id="selection2">
+			</div>
+
+			<div class="selection" id="selection3">
+			</div>
+
+			<div class="selection" id="selection4">
+			</div>
+
+			<div class="selection" id="selection5">
+			</div>
+
+			<div class="selection" id="selection6">
+			</div>
+
+			<div class="selection" id="selection7">
+			</div>
+
+			<div class="selection" id="selection8">
+			</div>
+
+			<div class="selection" id="selection9">
+			</div>
+		</div>
+		
+		<div id="stats">
+			<div id="player1">
+				<h2 id="player1Name">Jugador 1</h2>
+				<div id="status1">
+					<p>Victorias: <span id="wins1">0</span></p>
+					<p>Derrotas: <span id="loses1">0</span></p>
+					<p>Empates: <span id="draws1">0</span></p>
+				</div>	
+			</div>
+
+			<div id="player2">
+				<h2 id="player2Name">Jugador 2</h2>
+				<div id="status2">
+					<p>Victorias: <span id="wins2">0</span></p>
+					<p>Derrotas: <span id="loses2">0</span></p>
+					<p>Empates: <span id="draws2">0</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div id="option">
+			<button id="renamePlayers" type="button">Cambiar nombres</button>
+			<button id="start" type="button">Empezar</button>
+			<button id="resetButton" type="submit">Reiniciar juego</button>	
+		</div>
+
+		<div id="turns">
+			<p>Turno <span id="turnCounter"></span></p>
+		</div>
+
+		<div id="timing">
+			<div>
+				<span id="chronometer"></span>	
+			</div>			
+
+			<div>
+				<p>Tiempo jugando: <span id="playingTime">0:00</span></p>	
+			</div>
+		</div>
+
+		<div>
+			
+		</div>
+	</body>
+</html>
