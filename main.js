@@ -39,6 +39,7 @@ function game() {
 	let	loses2 = $("#loses2");
 	let	draws2 = $("#draws2");
 	let turnCounter = $("#turnCounter");
+	let print = ""
 	let	turn = 1;
 	let turns = 0;
 	let	min = 0;
@@ -280,7 +281,7 @@ function game() {
 			if ((cat[0].innerHTML !== "" && cat[1].innerHTML !== "") && cat[2].innerHTML !== "") {
 				if (cat[0].innerHTML == cat[1].innerHTML && cat[1].innerHTML == cat[2].innerHTML ) {
 					if (cat[0].innerHTML == "O") {
-						alert("EL JUGADOR 1 GANA");
+						print = "EL GANADOR ES " + player1;
 						let win = parseInt(wins1.html());
 						let lose = parseInt(loses2.html());
 						
@@ -290,10 +291,8 @@ function game() {
 						wins1.html(win);
 						loses2.html(lose);
 						$(this).off();
-
 					} else {
-						alert("EL JUGADOR 2 GANA");
-
+						print = "EL GANADOR ES " + player2;
 						let win = parseInt(wins2.html());
 						let lose = parseInt(loses1.html());
 						
@@ -307,13 +306,14 @@ function game() {
 					draw = false;
 					resetHtml();
 					timing(true);
+					finish();
 				}
 			}
 
 			if ((cat[3].innerHTML !== "" && cat[4].innerHTML !== "") && cat[5].innerHTML !== "") {
 				if (cat[3].innerHTML == cat[4].innerHTML && cat[4].innerHTML == cat[5].innerHTML ) {
 					if (cat[3].innerHTML == "O") {
-						alert("EL JUGADOR 1 GANA");
+						print = "EL GANADOR ES " + player1;
 						let win = parseInt(wins1.html());
 						let lose = parseInt(loses2.html());
 						
@@ -325,8 +325,7 @@ function game() {
 						$(this).off();
 
 					} else {
-						alert("EL JUGADOR 2 GANA");
-
+						print = "EL GANADOR ES " + player2;
 						let win = parseInt(wins2.html());
 						let lose = parseInt(loses1.html());
 						
@@ -340,13 +339,14 @@ function game() {
 					draw = false;
 					resetHtml();
 					timing(true);
+					finish();
 				}
 			}
 
 			if ((cat[6].innerHTML !== "" && cat[7].innerHTML !== "") && cat[8].innerHTML !== "") {
 				if (cat[6].innerHTML == cat[7].innerHTML && cat[7].innerHTML == cat[8].innerHTML ) {
 					if (cat[6].innerHTML == "O") {
-						alert("EL JUGADOR 1 GANA");
+						print = "EL GANADOR ES " + player1;
 						let win = parseInt(wins1.html());
 						let lose = parseInt(loses2.html());
 						
@@ -358,8 +358,7 @@ function game() {
 						$(this).off();
 
 					} else {
-						alert("EL JUGADOR 2 GANA");
-
+						print = "EL GANADOR ES " + player2;
 						let win = parseInt(wins2.html());
 						let lose = parseInt(loses1.html());
 						
@@ -373,6 +372,7 @@ function game() {
 					draw = false;
 					resetHtml();
 					timing(true);
+					finish();
 				}
 			}
 
@@ -380,7 +380,7 @@ function game() {
 			if ((cat[0].innerHTML !== "" && cat[3].innerHTML !== "") && cat[6].innerHTML !== "") {
 				if (cat[0].innerHTML == cat[3].innerHTML && cat[3].innerHTML == cat[6].innerHTML ) {
 					if (cat[0].innerHTML == "O") {
-						alert("EL JUGADOR 1 GANA");
+						print = "EL GANADOR ES " + player1;
 						let win = parseInt(wins1.html());
 						let lose = parseInt(loses2.html());
 						
@@ -392,8 +392,7 @@ function game() {
 						$(this).off();
 
 					} else {
-						alert("EL JUGADOR 2 GANA");
-
+						print = "EL GANADOR ES " + player2;
 						let win = parseInt(wins2.html());
 						let lose = parseInt(loses1.html());
 						
@@ -407,13 +406,14 @@ function game() {
 					draw = false; 
 					resetHtml();
 					timing(true);
+					finish();
 				}
 			}
 
 			if ((cat[1].innerHTML !== "" && cat[4].innerHTML !== "") && cat[7].innerHTML !== "") {
 				if (cat[1].innerHTML == cat[4].innerHTML && cat[4].innerHTML == cat[7].innerHTML ) {
 					if (cat[1].innerHTML == "O") {
-						alert("EL JUGADOR 1 GANA");
+						print = "EL GANADOR ES " + player1;					
 						let win = parseInt(wins1.html());
 						let lose = parseInt(loses2.html());
 						
@@ -425,8 +425,7 @@ function game() {
 						$(this).off();
 
 					} else {
-						alert("EL JUGADOR 2 GANA");
-
+						print = "EL GANADOR ES " + player2;
 						let win = parseInt(wins2.html());
 						let lose = parseInt(loses1.html());
 						
@@ -440,13 +439,14 @@ function game() {
 					draw = false;
 					resetHtml();
 					timing(true);
+					finish();
 				}
 			}
 
 			if ((cat[2].innerHTML !== "" && cat[5].innerHTML !== "") && cat[8].innerHTML !== "") {
 				if (cat[2].innerHTML == cat[5].innerHTML && cat[5].innerHTML == cat[8].innerHTML ) {
 					if (cat[2].innerHTML == "O") {
-						alert("EL JUGADOR 1 GANA");
+						print = "EL GANADOR ES " + player1;
 						let win = parseInt(wins1.html());
 						let lose = parseInt(loses2.html());
 						
@@ -458,8 +458,7 @@ function game() {
 						$(this).off();
 
 					} else {
-						alert("EL JUGADOR 2 GANA");
-
+						print = "EL GANADOR ES " + player2;
 						let win = parseInt(wins2.html());
 						let lose = parseInt(loses1.html());
 						
@@ -473,6 +472,7 @@ function game() {
 					draw = false;
 					resetHtml();
 					timing(true);
+					finish();
 				}
 			}
 
@@ -480,7 +480,7 @@ function game() {
 			if ((cat[0].innerHTML !== "" && cat[4].innerHTML !== "") && cat[8].innerHTML !== "") {
 				if (cat[0].innerHTML == cat[4].innerHTML && cat[4].innerHTML == cat[8].innerHTML ) {
 					if (cat[0].innerHTML == "O") {
-						alert("EL JUGADOR 1 GANA");
+						print = "EL GANADOR ES " + player1;
 						let win = parseInt(wins1.html());
 						let lose = parseInt(loses2.html());
 						
@@ -492,8 +492,7 @@ function game() {
 						$(this).off();
 
 					} else {
-						alert("EL JUGADOR 2 GANA");
-
+						print = "EL GANADOR ES " + player2;
 						let win = parseInt(wins2.html());
 						let lose = parseInt(loses1.html());
 						
@@ -507,13 +506,14 @@ function game() {
 					draw = false;
 					resetHtml();
 					timing(true);
+					finish();
 				}
 			} 
 
 			if ((cat[6].innerHTML !== "" && cat[4].innerHTML !== "") && cat[2].innerHTML !== "") {
 				if (cat[6].innerHTML == cat[4].innerHTML && cat[4].innerHTML == cat[2].innerHTML ) {
 					if (cat[6].innerHTML == "O") {
-						alert("EL JUGADOR 1 GANA");
+						print = "EL GANADOR ES " + player1;
 						let win = parseInt(wins1.html());
 						let lose = parseInt(loses2.html());
 						
@@ -525,8 +525,7 @@ function game() {
 						$(this).off();
 
 					} else {
-						alert("EL JUGADOR 2 GANA");
-
+						print = "EL GANADOR ES " + player2;
 						let win = parseInt(wins2.html());
 						let lose = parseInt(loses1.html());
 						
@@ -540,13 +539,13 @@ function game() {
 					draw = false; 
 					resetHtml();
 					timing(true);
+					finish();
 				}
 			}
 
 			//draw evaluation
 			if (draw == true) {
-				alert("EMPATE");
-
+				print = "EMPATE! VUELVAN A JUGAR";
 				let draw1 = parseInt(draws1.html());
 				let draw2 = parseInt(draws2.html());
 
@@ -560,8 +559,39 @@ function game() {
 				$("#game").off();
 				resetHtml();
 				timing(true);
+				finish();
 			}
 		}) 
+	}
+
+	function finish() {
+		$("#animationMessage").html(print);
+
+		$( "#animations" ).css("display", "block");
+		$( "#animations" ).animate({
+			height: "100%",
+			width: "100%",
+			top: 0,
+    		left: 0
+		}, 620,"easeInExpo",
+    	function() {
+    		$("#animationContain").animate({
+    			height: "20%",
+    			opacity: 1,
+				width: "20%",
+    		}, 1000, "linear");
+    	});
+
+    	$( "#animations" );
+		$( "#animations" ).animate({
+			height: "0%",
+			width: "0%",
+			top: 0,
+    		left: 0
+		}, 5000,"easeInExpo",
+    	function() {
+    		$("#animations").css("display", "none");
+    	});
 	}
 
 	timing(false);
