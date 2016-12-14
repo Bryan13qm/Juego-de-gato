@@ -69,9 +69,11 @@ function game() {
 					if (turn == 1) {
 						turn = 2;
 						secs = 10;
+						play.html(player2);
 					} else {
 						turn = 1;
 						secs = 10;
+						play.html(player1);
 					};
 				};
 
